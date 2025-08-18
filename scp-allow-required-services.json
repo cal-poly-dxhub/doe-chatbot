@@ -1,0 +1,56 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowRequiredAWSServices",
+      "Effect": "Allow",
+      "Action": [
+        "apigateway:*",
+        "bedrock:*",
+        "cdk:*",
+        "cloudformation:*",
+        "cloudfront:*",
+        "cognito-idp:*",
+        "cognito-identity:*",
+        "dynamodb:*",
+        "ec2:*",
+        "iam:*",
+        "lambda:*",
+        "logs:*",
+        "opensearch:*",
+        "opensearchserverless:*",
+        "s3:*",
+        "ssm:*",
+        "wafv2:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "DenyAllOtherServices",
+      "Effect": "Deny",
+      "NotAction": [
+        "apigateway:*",
+        "bedrock:*",
+        "cdk:*",
+        "cloudformation:*",
+        "cloudfront:*",
+        "cognito-idp:*",
+        "cognito-identity:*",
+        "dynamodb:*",
+        "ec2:*",
+        "iam:*",
+        "lambda:*",
+        "logs:*",
+        "opensearch:*",
+        "opensearchserverless:*",
+        "s3:*",
+        "ssm:*",
+        "wafv2:*",
+        "sts:AssumeRole",
+        "sts:GetCallerIdentity",
+        "organizations:*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
