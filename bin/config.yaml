@@ -1,6 +1,6 @@
 systemConfig:
   retainData: false
-  applicationName: redactedV3
+  applicationName: ui-dev-1
   llmConfig:
     streaming: true
     maxConversationHistory: 3

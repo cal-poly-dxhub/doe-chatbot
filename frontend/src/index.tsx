@@ -14,7 +14,7 @@ import { AppLayoutProvider } from './providers/AppLayoutProvider';
 import { FlagsProvider } from './providers/FlagsProvider';
 import { WsApiProvider } from './providers/WebSocketApiProvider';
 import reportWebVitals from './reportWebVitals';
-import './styles.css';
+import './styles.scss';
 
 createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

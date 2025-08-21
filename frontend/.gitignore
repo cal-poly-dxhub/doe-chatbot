@@ -50,3 +50,4 @@ runtime-config.*
 !/project.json
 !/.storybook/main.ts
 !/.storybook/preview.ts
+package-lock.json

@@ -49,7 +49,7 @@ export const useRuntimeConfig = () => {
  * Sets up the runtimeContext and Cognito auth.
  *
  * This assumes a runtime-config.json file is present at '/'. In order for Auth to be set up automatically,
- * the runtime-config.json must have the following properties configured: [region, userPoolId, userPoolWebClientId, identityPoolId].
+ * the runtime-config.json must have the following properties configured: [region, userPoolId, userPoolWebClientId, identityPoolId, wsApiUrl].
  */
 const Auth: React.FC<any> = ({ children }) => {
   const [runtimeContext, setRuntimeContext] = useState<RuntimeContext | undefined>();

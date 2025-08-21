@@ -27,3 +27,4 @@ bin/config.yaml
 
 output/
 
+cdk.context.json
